@@ -1,0 +1,20 @@
+n: 0
+Anzahl der Kombinationen: 0
+n: 1
+Anzahl der Kombinationen: 1
+n: 2
+Anzahl der Kombinationen: 13
+n: 3
+Anzahl der Kombinationen: 83
+n: 4
+Anzahl der Kombinationen: 1103
+n: 5
+Anzahl der Kombinationen: 11453
+n: 6
+Anzahl der Kombinationen: 127320
+n: 7
+Anzahl der Kombinationen: 1388914
+n: 8
+Anzahl der Kombinationen: 15330926
+n: 9
+Anzahl der Kombinationen: 167842605
