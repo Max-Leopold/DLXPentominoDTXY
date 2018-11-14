@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29092b2e-ce11-4e76-8b5f-283022e6bb5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/DLXPentominoDTXY/MatrixGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DLXPentominoDTXY/MatrixGen.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MatrixGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatrixGen.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -30,12 +28,12 @@
     <session id="1243712389">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1606" />
+          <entry key="java" value="1986" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1606" />
+          <entry key="JAVA" value="1986" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -52,10 +50,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MatrixGen.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="216" column="36" selection-start-line="216" selection-start-column="36" selection-end-line="216" selection-end-column="36" />
+            <state relative-caret-position="378">
+              <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#917#918#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
+                <element signature="e#6937#6938#0" expanded="true" />
+                <element signature="e#6969#6970#0" expanded="true" />
+                <element signature="e#7423#7424#0" expanded="true" />
+                <element signature="e#7461#7462#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,7 +123,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542205360715" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542217366973" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -161,12 +164,12 @@
       <option name="presentableId" value="Default" />
       <updated>1542183321561</updated>
       <workItem from="1542183324501" duration="3393000" />
-      <workItem from="1542215335155" duration="423000" />
+      <workItem from="1542215335155" duration="1861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4549000" />
+    <option name="totallyTimeSpent" value="5987000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="819" extended-state="0" />
@@ -181,14 +184,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33425033" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29298487" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.52682257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="CheckStyle" order="7" weight="0.42916092" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" weight="0.15955983" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49928468" weight="0.31361762" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007153" side_tool="true" weight="0.45529574" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.3287483" />
@@ -210,25 +213,18 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/MatrixGen.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/MatrixGen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="216" column="36" selection-start-line="216" selection-start-column="36" selection-end-line="216" selection-end-column="36" />
+        <state relative-caret-position="378">
+          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#917#918#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#6937#6938#0" expanded="true" />
+            <element signature="e#6969#6970#0" expanded="true" />
+            <element signature="e#7423#7424#0" expanded="true" />
+            <element signature="e#7461#7462#0" expanded="true" />
           </folding>
         </state>
       </provider>
