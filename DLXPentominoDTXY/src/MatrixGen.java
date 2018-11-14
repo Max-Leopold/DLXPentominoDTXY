@@ -4,12 +4,13 @@ import java.util.LinkedList;
 
 public class MatrixGen {
 
-  int n = 200;
+  int n = 1;
   int[][] matrix;
   LinkedList<int[]> positions;
   DLXNode h;
   DLXNode[] columnHeader;
   int cnt = 0;
+  int linecount = 0;
 
   public MatrixGen() {
 
@@ -28,10 +29,12 @@ public class MatrixGen {
     h.posX = 0;
     h.posY = 0;
 
-    columnHeader = new DLXNode[n + 1];
+    columnHeader = new DLXNode[(6 * n) + 1];
     columnHeader[0] = h;
 
     genHeader();
+    genRows();
+    search(0);
     printPositions();
     System.out.println("\nAnzahl möglicher Positionen: " + positions.size());
   }
@@ -173,7 +176,7 @@ public class MatrixGen {
 
   public void genHeader(){
 
-    for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= 6 * n; i++) {
 
       DLXNode nextHeader = new DLXNode();
 
@@ -199,6 +202,65 @@ public class MatrixGen {
       nextHeader.posX = i;
       columnHeader[i] = nextHeader;
     }
+  }
+
+  public void genRows(){
+
+    for (int[] x: positions) {
+
+      DLXNode[] tempArray = new DLXNode[x.length];
+
+      for (int i = 0; i < x.length; i++) {
+        DLXNode temp = new DLXNode();
+        temp.posX = x[i];
+        temp.posY = linecount;
+        tempArray[i] = temp;
+      }
+
+      //Array nach rechts verbinden
+      for (int i = 0; i < tempArray.length; i++) {
+        if(i == tempArray.length - 1){
+          tempArray[i].R = tempArray[0];
+        }else {
+          tempArray[i].R = tempArray[i + 1];
+        }
+      }
+
+      //Array nach links verbinden
+      for (int i = 0; i < tempArray.length; i++) {
+        if(i == 0){
+          tempArray[i].L = tempArray[tempArray.length - 1];
+        } else {
+          tempArray[i].L = tempArray[i - 1];
+        }
+      }
+
+      //Elemente nach oben verbinden
+      for (int i = 0; i < tempArray.length; i++) {
+        DLXNode head = getHeader(x[i]);
+        DLXNode last = head.U;
+
+        if(head.U == head){
+          tempArray[i].U = head;
+          tempArray[i].D = head;
+          head.U = tempArray[i];
+          head.D = tempArray[i];
+        } else {
+
+          last.D = tempArray[i];
+          tempArray[i].U = last;
+
+          head.U = tempArray[i];
+          tempArray[i].D = head;
+        }
+      }
+
+      linecount++;
+    }
+  }
+
+  public DLXNode getHeader(int i){
+    return columnHeader[i];
   }
 
 
