@@ -18,3 +18,5 @@ n: 8
 Anzahl der Kombinationen: 15330926
 n: 9
 Anzahl der Kombinationen: 167842605
+n: 10
+Anzahl der Kombinationen: 1845273115
