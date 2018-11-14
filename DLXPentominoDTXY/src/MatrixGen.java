@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class MatrixGen {
 
-  int n = 2;
+  int n = 4;
   int[][] matrix;
   LinkedList<int[]> positions;
   DLXNode h;
@@ -37,6 +37,7 @@ public class MatrixGen {
     search(0);
     printPositions();
     System.out.println("\nAnzahl möglicher Positionen: " + positions.size());
+    System.out.println(cnt);
   }
 
   public static void main(String[] args) {
@@ -214,6 +215,7 @@ public class MatrixGen {
         DLXNode temp = new DLXNode();
         temp.posX = x[i];
         temp.posY = linecount;
+        temp.C = columnHeader[x[i]];
         tempArray[i] = temp;
       }
 
@@ -264,6 +266,7 @@ public class MatrixGen {
   }
 
 
+
   //-- Methoden von Herr Professor Heinz --
 
   /**
@@ -301,7 +304,10 @@ public class MatrixGen {
    *
    */
   public void search (int k){ // finds & counts solutions
-    if (h.R == h) {cnt++; return;}     // if empty: count & done
+    if (h.R == h) {
+      System.out.println(cnt);
+      cnt++; return;
+    }     // if empty: count & done
     DLXNode c = h.R;                   // choose next column c
     cover(c);                          // remove c from columns
     for (DLXNode r=c.D; r!=c; r=r.D){  // forall rows with 1 in c
@@ -329,7 +335,8 @@ public class MatrixGen {
     for (DLXNode i=c.D; i!=c; i=i.D)      // forall rows with 1
       for (DLXNode j=i.R; i!=j; j=j.R){   // forall elem in row
         j.D.U = j.U ;                     // remove row element
-        j.U.D = j.D ;                     // .. from column list
+        j.U.D = j.D ;
+        // .. from column list
       }
   }
 
@@ -344,7 +351,8 @@ public class MatrixGen {
     for (DLXNode i=c.U; i!=c; i=i.U)      // forall rows with 1
       for (DLXNode j=i.L; i!=j; j=j.L){   // forall elem in row
         j.D.U = j ;                       // un-remove row elem
-        j.U.D = j ;                       // .. to column list
+        j.U.D = j ;
+        System.out.println("Uncover Column: " + j);// .. to column list
       }
     c.R.L = c ;                           // un-remove header
     c.L.R = c ;                           // .. to row list
