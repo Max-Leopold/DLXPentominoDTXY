@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * @author Nico Köpf, Maximilian Leopold
  */
-public class MatrixGen {
+public class DLXPentominoDTXY {
 
   int n = 4;
   int[][] matrix;
@@ -12,7 +12,7 @@ public class MatrixGen {
   int cnt = 0;
   int linecount = 1;
 
-  public MatrixGen() {
+  public DLXPentominoDTXY() {
 
     Scanner sc = new Scanner(System.in);
     System.out.print("n: ");
@@ -48,7 +48,7 @@ public class MatrixGen {
   }
 
   public static void main(String[] args) {
-    new MatrixGen();
+    new DLXPentominoDTXY();
   }
 
   private void genD() {
