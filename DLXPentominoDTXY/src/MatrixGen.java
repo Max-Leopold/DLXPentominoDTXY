@@ -4,13 +4,13 @@ import java.util.LinkedList;
 
 public class MatrixGen {
 
-  int n = 1;
+  int n = 2;
   int[][] matrix;
   LinkedList<int[]> positions;
   DLXNode h;
   DLXNode[] columnHeader;
   int cnt = 0;
-  int linecount = 0;
+  int linecount = 1;
 
   public MatrixGen() {
 
