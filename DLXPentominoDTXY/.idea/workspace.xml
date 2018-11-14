@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="29092b2e-ce11-4e76-8b5f-283022e6bb5a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/MatrixGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MatrixGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MatrixGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DLXPentominoDTXY.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,12 +29,14 @@
     <session id="1243712389">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1986" />
+          <entry key="dummy" value="16" />
+          <entry key="java" value="1987" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1986" />
+          <entry key="JAVA" value="1987" />
+          <entry key="PLAIN_TEXT" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -48,10 +51,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/MatrixGen.java">
+        <entry file="file://$PROJECT_DIR$/src/DLXPentominoDTXY.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+            <state relative-caret-position="660">
+              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
               <folding>
                 <element signature="e#917#918#0" expanded="true" />
                 <element signature="e#942#943#0" expanded="true" />
@@ -80,6 +83,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/MatrixGen.java" />
+        <option value="$PROJECT_DIR$/src/DLXPentominoDTXY.java" />
       </list>
     </option>
   </component>
@@ -123,7 +127,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542217366973" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542217843106" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -140,8 +144,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="MatrixGen" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="MatrixGen" />
+    <configuration name="DLXPentominoDTXY" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DLXPentominoDTXY" />
       <module name="DLXPentominoDTXY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -149,7 +153,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MatrixGen" />
+        <item itemvalue="Application.DLXPentominoDTXY" />
       </list>
     </recent_temporary>
   </component>
@@ -164,18 +168,17 @@
       <option name="presentableId" value="Default" />
       <updated>1542183321561</updated>
       <workItem from="1542183324501" duration="3393000" />
-      <workItem from="1542215335155" duration="1861000" />
+      <workItem from="1542215335155" duration="2515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5987000" />
+    <option name="totallyTimeSpent" value="6641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="819" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -184,7 +187,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29298487" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29298487" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.52682257" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -214,10 +217,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/MatrixGen.java">
+    <entry file="file://$PROJECT_DIR$/src/DLXPentominoDTXY.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="45" column="14" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+        <state relative-caret-position="660">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
           <folding>
             <element signature="e#917#918#0" expanded="true" />
             <element signature="e#942#943#0" expanded="true" />
