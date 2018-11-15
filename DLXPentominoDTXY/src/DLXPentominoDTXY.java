@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 /**
+ * Programm zur Errechnung der Möglichkeiten wie ein 6*n Feld mit Dominos, Y, T und X Pentominos gefüllt werden kann
  * @author Nico Köpf, Maximilian Leopold
  */
 public class DLXPentominoDTXY {
@@ -51,6 +52,9 @@ public class DLXPentominoDTXY {
     new DLXPentominoDTXY();
   }
 
+  /**
+   * Dominos generieren
+   */
   private void genD() {
 
     for (int y = 0; y < 6; y++) {
@@ -68,7 +72,9 @@ public class DLXPentominoDTXY {
 
   }
 
-
+  /**
+   * T Pentomino generieren
+   */
   private void genT() {
     for (int y = 0; y < 6; y++) {
       for (int x = 0; x < n; x++) {
@@ -88,6 +94,9 @@ public class DLXPentominoDTXY {
     }
   }
 
+  /**
+   * Y Pentomino generieren
+   */
   private void genY() {
     for (int y = 0; y < 6; y++) {
       for (int x = 0; x < n; x++) {
@@ -120,6 +129,9 @@ public class DLXPentominoDTXY {
     }
   }
 
+  /**
+   * X Pentomino generiren
+   */
   private void genX() {
     for (int y = 0; y < 6; y++) {
       for (int x = 0; x < n; x++) {
@@ -133,6 +145,9 @@ public class DLXPentominoDTXY {
     }
   }
 
+  /**
+   * Füllt die Matrix
+   */
   private void fillMatrix() {
     int nmbr = 1;
     for (int i = 0; i < 6; i++) {
@@ -143,6 +158,9 @@ public class DLXPentominoDTXY {
     }
   }
 
+  /**
+   * Gibt die Matrix aus
+   */
   private void printMatrix() {
 
     for (int i = 0; i < 6; i++) {
@@ -173,23 +191,27 @@ public class DLXPentominoDTXY {
 
   }
 
+  /**
+   * Generiert die Spalten Header
+   */
   public void genHeader() {
 
-    for (int i = 1; i <= 6 * n; i++) {
+    for (int i = 1; i <= 6 * n; i++) { //Alle Header generieren
 
       DLXNode nextHeader = new DLXNode();
 
-      if ((h.R == h) && (h.L == h)) {
+      if ((h.R == h) && (h.L == h)) { //Erste Spalte erstellen
 
         h.R = nextHeader;
         h.L = nextHeader;
 
         nextHeader.L = h;
         nextHeader.R = h;
-      } else {
+      } else { //Alle anderen Spalten
 
         DLXNode lastElement = h.L;
 
+        //Verbinden
         h.L = nextHeader;
         nextHeader.R = h;
 
@@ -199,10 +221,14 @@ public class DLXPentominoDTXY {
 
       nextHeader.posY = 0;
       nextHeader.posX = i;
-      columnHeader[i] = nextHeader;
+      columnHeader[i] = nextHeader; //Speichern in Array
     }
   }
 
+  /**
+   * Generiert eine Reihe für die Überlagungsmatrix aus einem int Array
+   * @param x
+   */
   public void genRows(int[] x) {
 
     //for (int[] x: positions) {
@@ -212,8 +238,8 @@ public class DLXPentominoDTXY {
     for (int i = 0; i < x.length; i++) {
       DLXNode temp = new DLXNode();
       temp.posX = x[i];
-      temp.posY = linecount;
-      temp.C = columnHeader[x[i]];
+      temp.posY = linecount; //Y Position durch linecount festelegen
+      temp.C = columnHeader[x[i]]; //Header Zuweisen
       tempArray[i] = temp;
     }
 
@@ -255,7 +281,7 @@ public class DLXPentominoDTXY {
       }
     }
 
-    linecount++;
+    linecount++; //Eine Zeile erstellt
   }
 
   public DLXNode getHeader(int i) {
